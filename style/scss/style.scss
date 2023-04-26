@@ -146,6 +146,7 @@ body{
     .header__container {
         min-height: 90px;
     }
+
 }
 
 @media (max-width: 767.98px) {
@@ -186,6 +187,10 @@ body{
 
     .icon-menu span {
         top: calc(50% - 1px);
+    }
+
+    .menu-open .icon-menu{
+        background-color: #000;
     }
 
     .menu-open .icon-menu::before {
@@ -257,6 +262,8 @@ body{
     .header__container {
         gap: 10px;
     }
+    
+
     .header__logo {
         width: 38px;
         overflow: hidden;
@@ -273,7 +280,25 @@ body{
         height: 63px;
         padding-top: 10px;
         border-radius: 0; 
-        background: url("/img/header/cart.svg") center / auto 100% no-repeat;
+        background: url("/cart.svg") center / auto 100% no-repeat;
+    }
+
+    .header {
+
+        &__container {
+            justify-content: space-around;
+            
+        }
+    
+    
+        &__menu {
+            flex: 0 0 auto;
+        }
+    
+        &__button {
+            flex: 0 0 auto;
+        }
+    
     }
 }
 

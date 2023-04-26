@@ -229,6 +229,9 @@ body a {
   .icon-menu span {
     top: calc(50% - 1px);
   }
+  .menu-open .icon-menu {
+    background-color: #000;
+  }
   .menu-open .icon-menu::before {
     top: calc(50% - 1px);
     transform: rotate(-45deg);
@@ -298,7 +301,16 @@ body a {
     height: 63px;
     padding-top: 10px;
     border-radius: 0;
-    background: url("/img/header/cart.svg") center/auto 100% no-repeat;
+    background: url("/cart.svg") center/auto 100% no-repeat;
+  }
+  .header__container {
+    justify-content: space-around;
+  }
+  .header__menu {
+    flex: 0 0 auto;
+  }
+  .header__button {
+    flex: 0 0 auto;
   }
 }
 .main {
