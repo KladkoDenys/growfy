@@ -81,6 +81,9 @@ body{
     display: flex;
     gap: 5px;
 
+    &__img {
+        display: none;
+    }
     &__text {
         display: inline-block;
         font-size: 18px;
@@ -276,11 +279,29 @@ body{
 
     .cart-header__quantity { 
         font-weight: 500; 
-        width: 34px;
-        height: 63px;
-        padding-top: 10px;
+        // width: 34px;
+        // height: 63px;
+        // padding-top: 10px;
         border-radius: 0; 
-        background: url("/cart.svg") center / auto 100% no-repeat;
+        background-color: #1E1E1E;
+    }
+
+    .menu-open .cart-header__quantity {
+        background-color: #000;
+    }
+
+    .cart-header__img {
+        position: absolute;
+        display: block;
+        width: 65px;
+        height: 94px;
+        top: -35px;
+        left: -17px;
+    }
+
+    .cart-header__img img{
+        width: 100%;
+        height: 100%;
     }
 
     .header {
