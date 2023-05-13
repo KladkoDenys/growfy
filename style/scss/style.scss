@@ -24,9 +24,17 @@ body{
     overflow: clip;
 }
 
-//---------------------------
+//------------------------------------------------------------------------------------------------
 //--Header
-//---------------------------
+//------------------------------------------------------------------------------------------------
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(30, 30, 30, 0.8)
+}
 
 .header {
 
@@ -279,9 +287,6 @@ body{
 
     .cart-header__quantity { 
         font-weight: 500; 
-        // width: 34px;
-        // height: 63px;
-        // padding-top: 10px;
         border-radius: 0; 
         background-color: #1E1E1E;
     }
@@ -325,10 +330,110 @@ body{
 
 
 
-//---------------------------
-//--
-//---------------------------
+//------------------------------------------------------------------------------------------------
+//--Main
+//------------------------------------------------------------------------------------------------
 
 .main {
     flex: 1 1 auto;
+    margin-top: 116px;
+} 
+
+.main {
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__section {
+        padding-bottom: 192px;
+    }
+    
+    &__content {
+        flex: 0 1 50%;
+        max-width: 510px;
+        padding-top: 170px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 51.2px;
+        line-height: 1.19;
+        color: #FFFFFF;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 27px;
+        padding: 32px 0;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 32px;
+    }
+
+
+    &__images {
+        flex: 0 1 50%;
+    }
 }
+
+.button {
+
+    &__dark {
+        background-color: #4b4b57;
+    }
+
+    &__dark:hover {
+        background-color: #373740;
+    }
+}
+
+.images-main {
+    padding-top: 44px;
+}
+
+.imades-main__item {
+    display: flex;
+    justify-content: end;
+    padding-right: 27px;
+    gap: 10%;
+}
+
+.imades-main__item-colum {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.imades-main__item-colum img{
+    flex: 0 1 auto;
+}
+
+.imades-main {
+
+    &__item {
+    }
+}
+
+.imades-main__item1 {
+    border-radius: 50% / 29%;
+    overflow: hidden;
+}
+.imades-main__item2 {     
+    border-radius: 50% 50% 0 50%;
+    overflow: hidden;
+}
+
+.imades-main__item3 {
+    border-radius: 50% 0px 50% 50%;
+    overflow: hidden;
+}
+.imades-main__item4 {
+    border-radius: 50% / 29%;
+    overflow: hidden;
+}
+
+
