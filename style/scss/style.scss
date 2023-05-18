@@ -371,7 +371,7 @@ body{
     &__title::before {
         position: absolute;
         content: "";
-        background:url('/img/main/main/points.svg') 0 0 / 100% no-repeat;
+        background:url("../img/main/main/points.png") 0 0 / 100% no-repeat;
         top: -20px;
         left: -34px;
         width: 122px;
@@ -903,8 +903,8 @@ body{
 
     &__images::before {
         position: absolute;
-        content: " ";
-        background:url('/img/main/main/points.svg') 0 0 / 100% no-repeat;
+        content: "";
+        background:url("../img/main/main/points.png") 0 0 / 100% no-repeat;
         bottom: 0px;
         left: -13px;
         width: 122px;
@@ -959,13 +959,13 @@ body{
     }
 
     &__list li::before{
-        content: " ";
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
         width: 32px;
         height: 32px;
-        background: rgba(129, 129, 139, 0.1) url(/img/main/why/check.svg) center no-repeat;
+        background: rgba(129, 129, 139, 0.1) url("../img/main/why/check.png") center no-repeat;
         border-radius: 32px;
     }
 
